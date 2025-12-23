@@ -1,0 +1,134 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="#">MyPortfolio</a>
+            <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">☰</button>
+            <nav id="site-nav" class="site-nav">
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="container">
+                <h1>Hi — I'm Tushar, a Front-end Developer</h1>
+                <p>Crafting modern, accessible interfaces and clean user experiences.</p>
+                <p><a class="btn" href="#projects">View my work</a></p>
+            </div>
+        </section>
+
+                <section id="about" class="about container">
+                        <h2>About me</h2>
+                        <p>Hi! I'm <strong>[Your Name]</strong>, a Computer Science student and beginner front-end developer. I'm learning web fundamentals and building small projects to practice HTML, CSS and JavaScript. I enjoy solving problems and learning new tools.</p>
+
+                        <div class="two-col">
+                            <div>
+                                <h3>Skills</h3>
+                                <ul class="skills-list">
+                                    <li>
+                                        <span class="skill-label">HTML &amp; CSS</span>
+                                        <div class="skill-bar" data-level="75"><span style="width:75%"></span></div>
+                                    </li>
+                                    <li>
+                                        <span class="skill-label">JavaScript (ES6)</span>
+                                        <div class="skill-bar" data-level="60"><span style="width:60%"></span></div>
+                                    </li>
+                                    <li>
+                                        <span class="skill-label">Git &amp; GitHub</span>
+                                        <div class="skill-bar" data-level="55"><span style="width:55%"></span></div>
+                                    </li>
+                                    <li>
+                                        <span class="skill-label">React (basics)</span>
+                                        <div class="skill-bar" data-level="35"><span style="width:35%"></span></div>
+                                    </li>
+                                    <li>
+                                        <span class="skill-label">SQL / Databases (basics)</span>
+                                        <div class="skill-bar" data-level="40"><span style="width:40%"></span></div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div>
+                                <h3>Education & Goals</h3>
+                                <p>Currently studying computer science and focusing on front-end development. My short-term goal is to become confident building responsive sites and simple web apps. Long-term, I'd like to learn full-stack development.</p>
+                            </div>
+                        </div>
+                </section>
+
+                <section id="work" class="work container">
+                    <h2>Work / Experience</h2>
+                    <div class="work-grid">
+                        <article class="work-card">
+                            <h3>Virtual Internship — Deloitte</h3>
+                            <p class="muted">Remote — Virtual Internship (student program)</p>
+                            <p>I completed a virtual internship program with Deloitte where I worked on small web tasks, learned professional workflows (Git/GitHub), and collaborated with other interns. I practiced writing accessible HTML, basic CSS components, and debugging JavaScript. (This is an educational/virtual internship entry.)</p>
+                            <p><strong>Role:</strong> Junior Web Developer Intern (virtual)</p>
+                            <p class="muted">Summer 2024</p>
+                        </article>
+                    </div>
+                </section>
+
+        <section id="projects" class="projects container">
+            <h2>Selected projects</h2>
+            <div class="grid">
+                <article class="card">
+                    <div class="card-media" aria-hidden="true"></div>
+                    <h3>Project One</h3>
+                    <p>Responsive marketing site with animation and CMS integration.</p>
+                    <p><a class="link" href="#">Live demo</a></p>
+                </article>
+
+                <article class="card">
+                    <div class="card-media" aria-hidden="true"></div>
+                    <h3>Project Two</h3>
+                    <p>Single-page web app with client-side routing and REST API.</p>
+                    <p><a class="link" href="#">Case study</a></p>
+                </article>
+
+                <article class="card">
+                    <div class="card-media" aria-hidden="true"></div>
+                    <h3>Project Three</h3>
+                    <p>Performance-first e-commerce front-end and checkout flow.</p>
+                    <p><a class="link" href="#">View</a></p>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact" class="contact container">
+            <h2>Contact</h2>
+            <p>If you'd like to work together, email me at <a href="mailto:tushar@example.com">tushar@example.com</a> or send a message below.</p>
+            <form class="contact-form" action="mailto:alex@example.com" method="post" enctype="text/plain">
+                <label>
+                    Your name
+                    <input type="text" name="name" placeholder="Your name">
+                </label>
+                <label>
+                    Message
+                    <textarea name="message" rows="4" placeholder="A short message"></textarea>
+                </label>
+                <button class="btn" type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; <span id="year"></span> MyPortfolio — Built with HTML, CSS & JavaScript</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
